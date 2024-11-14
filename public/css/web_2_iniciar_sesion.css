@@ -1,0 +1,224 @@
+section {
+  width: 100vmax;
+  min-height: 100vh;
+  background: #557085;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  /* z-index: 100; */
+  /* padding: 20px; */
+}
+section.activado {
+  background: #3e3f39;
+}
+section .contenedor_login {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+section .contenedor_login .usuario {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+section .contenedor_login .usuario .img_login {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+section .contenedor_login .usuario .img_login img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .contenedor_login .usuario .formulario {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  /* border: 1px solid red; */
+}
+section .contenedor_login .usuario .formulario h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+  /* border: 1px solid red; */
+}
+section .contenedor_login .usuario .formulario input {
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+  section
+  .contenedor_login
+  .usuario
+  .formulario
+  input[type="submit"] {
+  max-width: 150px;
+  background: #677eff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+  section
+  .contenedor_login
+  .usuario.nuevo_registro
+  .formulario
+  input[type="submit"] {
+  background: #e73e49;
+}
+  section
+  .contenedor_login
+  .usuario
+  .formulario
+  .registrate {
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+  section
+  .contenedor_login
+  .usuario
+  .formulario
+  .registrate
+  a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #577eff;
+}
+/* section .contenedor_login .usuario .formulario .nuevo_registro {
+  display: none;
+} */
+section .contenedor_login .nuevo_registro {
+  pointer-events: none;
+}
+section .contenedor_login.activado .nuevo_registro {
+  pointer-events: initial;
+}
+section .contenedor_login .nuevo_registro .formulario {
+  top: 100%;
+}
+  section
+  .contenedor_login.activado
+  .nuevo_registro
+  .formulario {
+  top: 0;
+}
+section .contenedor_login .nuevo_registro .img_login {
+  top: -100%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+  section
+  .contenedor_login.activado
+  .nuevo_registro
+  .img_login {
+  top: 0;
+}
+section .contenedor_login .iniciar_sesion .formulario {
+  top: 0;
+}
+  section
+  .contenedor_login.activado
+  .iniciar_sesion
+  .formulario {
+  top: 100%;
+}
+section .contenedor_login .iniciar_sesion .img_login {
+  top: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+  section
+  .contenedor_login.activado
+  .iniciar_sesion
+  .img_login {
+  top: -100%;
+}
+.registrate .atras {
+  justify-self: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #577eff;
+}
+/* MEDIA QUERY */
+/* MEDIA QUERY */
+/* MEDIA QUERY */
+@media (max-width: 991px) {
+  section .contenedor_login {
+    max-width: 400px;
+  }
+  section .contenedor_login .img_login {
+    display: none;
+  }
+  section .contenedor_login .usuario .formulario {
+    width: 100%;
+  }
+  section .contenedor_login.activado .iniciar_sesion .formulario {
+    top: -100%;
+  }
+}

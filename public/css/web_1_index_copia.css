@@ -1,0 +1,342 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url(web_categorias.css);
+@import url(web_lo_mas_vendido.css);
+@import url(web_banner.css);
+@import url(web_productos.css);
+@import url(web_suscribete.css);
+@import url(web_footer.css);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --titulo_ppal_fuente: #fff;
+}
+header {
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  font-family: "Russo One", sans-serif;
+  /* border: 1px solid red; */
+}
+/* CONTENEDOR HEADER */
+/* CONTENEDOR HEADER */
+/* CONTENEDOR HEADER */
+.contenedor-header {
+  width: 100%;
+  height: 14.375em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid fuchsia; */
+}
+.fondo_blanco{
+  width: 100%;
+  height: 6.25em;
+  background-image: url(../img/fondo1_blanco.jpg);
+  /* border: 1px solid red; */
+}
+.fondo_negro{
+  width: 100%;
+  height: 8.125em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: #262626;
+  /* border: 1px solid red; */
+}
+/* BOTON INICIAR SESION */
+/* BOTON INICIAR SESION */
+/* BOTON INICIAR SESION */
+.boton-animado {
+  align-self: flex-end;
+  position: absolute;
+  z-index: 10;
+  /* border: 1px solid red; */
+}
+.boton-animado__btn {
+  margin-top: 0.9375rem;
+  position: relative;
+  display: inline-block;
+  width: 17.3125rem;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 1.0625rem;
+  transform: scale(60%);
+  -webkit-transform: scale(60%);
+  -moz-transform: scale(60%);
+  -ms-transform: scale(60%);
+  -o-transform: scale(60%);
+  letter-spacing: 0.045em;
+}
+.boton-animado__btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.boton-animado__btn svg rect {
+  stroke: #000;
+  stroke-width: 4;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+}
+.boton-animado__btn span {
+  background: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.boton-animado__btn:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+/* LOGO MILITARY FITNS */
+/* LOGO MILITARY FITNS */
+/* LOGO MILITARY FITNS */
+.logo-ppal {
+  width: 25em;
+  margin-top: 0.625em;
+  position: absolute;
+  cursor: pointer;
+  z-index: 30;
+  /* border: 1px solid orange; */
+}
+/* BUSCAR */
+.contenedor-buscar-ofertas {
+  width: 100%;
+  margin-top: 6.875em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 20;
+  /* border: 1px solid red; */
+}
+.buscar {
+  width: 20%;
+  position: relative;
+  /* border: 1px solid fuchsia; */
+}
+.buscar__input {
+  width: 100%;
+  height: 2.1875em;
+  padding-right: 1.5625em;
+  margin-left: 1.25em;
+  text-align: right;
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+  border-radius: 0.625rem 0rem 0.625rem 0rem;
+  -webkit-border-radius: 0.625rem 0rem 0.625rem 0rem;
+  -moz-border-radius: 0.625rem 0rem 0.625rem 0rem;
+  -ms-border-radius: 0.625rem 0rem 0.625rem 0rem;
+  -o-border-radius: 0.625rem 0rem 0.625rem 0rem;
+}
+.buscar__input:focus {
+  border: 3px solid #4b5320;
+}
+.buscar__input::placeholder {
+  color: #aaa;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+}
+.icon-search-5 {
+  color: #aaa;
+  font-size: 1.2em;
+  position: absolute;
+  top: 6px;
+  left: 97%;
+  cursor: pointer;
+}
+.icon-search-5:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+.ofertas {
+  width: 20%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  /* border: 1px solid fuchsia; */
+}
+.ofertas__nav {
+  /* width: 30%; */
+  height: 6.25em;
+  color: #fff;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.ofertas__menu {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.ofertas__opciones {
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  display: inline-block;
+  padding: 1.25em;
+  /* border: 1px solid red; */
+}
+.ofertas__links {
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.contenedor_buscar_ofertas nav li a:hover {
+  color: #649a12;
+}
+.icon-street-view {
+  font-size: 1.2em;
+}
+/* BARRA DE NAVEGACION */
+/* BARRA DE NAVEGACION */
+/* BARRA DE NAVEGACION */
+.nav {
+  position: absolute;
+  bottom: 10px;
+  z-index: 40;
+  /* border: 1px solid fuchsia; */
+}
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav__opciones {
+  width: 8.75em;
+  height: 2.5em;
+  line-height: 2.5em;
+  margin-right: 0.3125em;
+  margin-left: 0.3125em;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+}
+.nav__links {
+  width: 8.75em;
+  height: 2.5em;
+  line-height: 2.5em;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1875em;
+  font-weight: bold;
+  padding: 0 0.3125em;
+  border: 1px solid #fff;
+}
+.nav__opciones svg,
+.nav__opciones svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+.nav.visible .nav__opciones svg rect {
+  animation: animacionBotones 2s;
+  -webkit-animation: animacionBotones 2s;
+}
+@keyframes animacionBotones {
+  from {
+    stroke: rgb(115, 153, 39);
+    stroke-dasharray: 8.75em 2.5em;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke: #4b5320;
+    stroke-width: 4;
+    stroke-dasharray: 2.5em 8.75em;
+    stroke-dashoffset: 13.75em;
+    transition: 2s all;
+    -webkit-transition: 2s all;
+    -moz-transition: 2s all;
+    -ms-transition: 2s all;
+    -o-transition: 2s all;
+  }
+}
+.nav__opciones svg rect {
+  stroke: #4b5320;
+  stroke-width: 4;
+  stroke-dasharray: 2.5em 8.75em;
+  stroke-dashoffset: 25em;
+  transition: 2s all;
+  -webkit-transition: 2s all;
+  -moz-transition: 2s all;
+  -ms-transition: 2s all;
+  -o-transition: 2s all;
+}
+.nav__opciones:hover svg rect {
+  stroke: rgb(115, 153, 39);
+  stroke-dasharray: 8.75em 2.5em;
+  stroke-dashoffset: 0;
+}
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+@media (max-height: 768px) {
+  .contenedor-header {
+    font-size: 12px;
+  }
+  .logo-ppal{
+    font-size: 12px;
+  }
+  .contenedor__fondo-pesas {
+    font-size: 12px;
+  }
+  .contenedor-tarjetas {
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5em;
+    /* border: 1px solid fuchsia; */
+  }
+  svg text {
+    font-size: 3em;
+  }
+  .contenedor-banner {
+    font-size: 10px;
+  }
+  .contenedor__suscribete {
+    font-size: 10px;
+  }
+  .contenedor__footer {
+    font-size: 12px;
+  }
+}
